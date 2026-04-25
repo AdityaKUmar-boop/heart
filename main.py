@@ -1,6 +1,5 @@
 # ============================================
-# Cardiac Health Risk Analysis System (Final)
-# CSV आधारित Professional Version (No ML)
+# Cardiac Health Risk Analysis System
 # ============================================
 
 import pandas as pd
@@ -113,7 +112,7 @@ def visualize(df):
     plt.show()
 
 # -------------------------------
-# 6. Save Output (Professional Touch)
+# 6. Saving Output 
 # -------------------------------
 def save_results(df):
     df.to_csv("output_results.csv", index=False)

@@ -38,39 +38,37 @@ python main.py
 ## 📐 Mathematical Tools & Formulas
 
 ### 1. Mean (Handling Missing Values)
-\[
-\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
-\]
+x̄ = (1/n) Σ xi  
 Used to replace missing values by calculating the average of each feature.
 
 ---
 
 ### 2. Correlation Coefficient (Feature Relationship)
-\[
-r = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum (x_i - \bar{x})^2 \sum (y_i - \bar{y})^2}}
-\]
-Measures the strength and direction of the relationship between variables (e.g., BP and cholesterol).
+r = Σ[(xi - x̄)(yi - ȳ)] / √[Σ(xi - x̄)² Σ(yi - ȳ)²]  
+Measures the strength and direction of the relationship between variables.
 
 ---
 
 ### 3. Risk Scoring Function
-\[
-\text{Risk Score} = w_1 \cdot Age + w_2 \cdot BP + w_3 \cdot Cholesterol + w_4 \cdot HeartRate + w_5 \cdot Exang + w_6 \cdot Oldpeak
-\]
+Risk Score = w1·Age + w2·BP + w3·Cholesterol + w4·HeartRate + w5·Exang + w6·Oldpeak  
 A weighted scoring system combining multiple clinical parameters.
 
 ---
 
 ### 4. Risk Classification Model
-\[
-\text{Risk} =
-\begin{cases}
-\text{High}, & \text{if } score \geq 5 \\
-\text{Moderate}, & \text{if } 3 \leq score < 5 \\
-\text{Low}, & \text{if } score < 3
-\end{cases}
-\]
+
+- High Risk → score ≥ 5  
+- Moderate Risk → 3 ≤ score < 5  
+- Low Risk → score < 3  
+
 Classifies patients into risk categories.
+
+---
+
+## 🧠 Analytical Techniques Used
+- Statistical Analysis (Mean, Correlation)
+- Rule-Based Risk Scoring
+- Data Visualization
 
 ---
 
